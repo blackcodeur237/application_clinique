@@ -145,7 +145,6 @@
     <Folder Include="src\features\admin\" />
     <Folder Include="src\features\auth\" />
     <Folder Include="src\features\caissier\" />
-    <Folder Include="src\features\medecin\" />
     <Folder Include="src\models\" />
   </ItemGroup>
   <ItemGroup>

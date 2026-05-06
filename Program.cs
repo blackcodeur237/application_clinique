@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using MyClinic_1._0.src.features.splash;
-using MyClinic_1._0.src.features.login;
+using MyClinic_1._0.src;
 
 namespace MyClinic_1._0
 {
