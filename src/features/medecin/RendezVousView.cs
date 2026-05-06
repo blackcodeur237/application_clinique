@@ -1,7 +1,7 @@
-src\features\appointments\RendezVousView.cs
-using System;
+ï»¿using System;
 using System.Drawing;
 using System.Windows.Forms;
+
 
 namespace MyClinic_1._0.src.features.appointments
 {
@@ -37,7 +37,7 @@ namespace MyClinic_1._0.src.features.appointments
             btnNew = new Button { Text = "Nouveau RDV", Width = 120, Left = 228, BackColor = Color.Green, ForeColor = Color.White, FlatStyle = FlatStyle.Flat };
 
             btnFilter.Click += (s, e) => MessageBox.Show($"Filtrer pour le {dpDate.Value:d}");
-            btnNew.Click += (s, e) => MessageBox.Show("Créer un nouveau rendez?vous (à implémenter)");
+            btnNew.Click += (s, e) => MessageBox.Show("CrÃ©er un nouveau rendezâ€‘vous (Ã  implÃ©menter)");
 
             topPanel.Controls.Add(dpDate);
             topPanel.Controls.Add(btnFilter);
@@ -68,7 +68,7 @@ namespace MyClinic_1._0.src.features.appointments
         {
             if (this.DesignMode) return;
 
-            // Données d'exemple — remplacer par chargement réel
+            // DonnÃ©es d'exemple â€” remplacer par chargement rÃ©el
             grid.Rows.Clear();
             grid.Rows.Add("1", "2026-05-06", "09:00", "Dupont Marie", "Dr. Durand");
             grid.Rows.Add("2", "2026-05-06", "10:30", "Martin Paul", "Dr. Lefevre");

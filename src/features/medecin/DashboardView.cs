@@ -1,9 +1,8 @@
-src\features\dashboard\DashboardView.cs
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MyClinic_1._0.src.features.dashboard
+namespace MyClinic_1._0.src.features.medecin
 {
     public partial class DashboardView : UserControl
     {
@@ -37,7 +36,7 @@ namespace MyClinic_1._0.src.features.dashboard
             layout.Padding = new Padding(20);
             this.Controls.Add(layout);
 
-            // Card factory
+            // Cartes
             cardPatients = CreateCard("Patients", out lblPatientsCount);
             cardAppointments = CreateCard("Rendez?vous", out lblAppointmentsCount);
             cardToday = CreateCard("Aujourd'hui", out lblTodayCount);
@@ -86,7 +85,7 @@ namespace MyClinic_1._0.src.features.dashboard
         {
             if (this.DesignMode) return;
 
-            // Chargement d'exemple — remplacer par appels réels
+            // Données d'exemple — remplacer par appels réels
             lblPatientsCount.Text = "128";
             lblAppointmentsCount.Text = "34";
             lblTodayCount.Text = "7";

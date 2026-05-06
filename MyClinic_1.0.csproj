@@ -115,6 +115,15 @@
     <Compile Include="src\features\auth\login\LoginView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="src\features\medecin\DashboardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\features\medecin\PatientListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\features\medecin\RendezVousView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="src\features\splash\SplashView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,7 +159,6 @@
     <Folder Include="src\data\" />
     <Folder Include="src\features\admin\" />
     <Folder Include="src\features\caissier\" />
-    <Folder Include="src\features\medecin\" />
     <Folder Include="src\models\" />
   </ItemGroup>
   <ItemGroup>
