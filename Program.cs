@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyClinic_1._0.src.features.spalsh;
+using MyClinic_1._0.src.features.splash;
+using MyClinic_1._0.src;
 
 namespace MyClinic_1._0
 {
@@ -17,7 +15,17 @@ namespace MyClinic_1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashView());
+
+            using (var splash = new SplashView())
+            {
+                // Affiche le splash en modal ; si DialogResult.OK on continue
+                if (splash.ShowDialog() != DialogResult.OK)
+                {
+                    return;
+                }
+            }
+
+            Application.Run(new MainForm());
         }
     }
 }
