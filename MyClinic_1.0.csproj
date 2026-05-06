@@ -112,17 +112,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\cores\SecurityHelper.cs" />
-    <Compile Include="src\features\auth\LoginView.cs">
+    <Compile Include="src\features\splash\SplashView.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\features\auth\LoginView.Designer.cs">
-      <DependentUpon>LoginView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="src\features\spalsh\SplashView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\features\spalsh\SplashView.Designer.cs">
-      <DependentUpon>SplashView.cs</DependentUpon>
     </Compile>
     <Compile Include="src\services\AuthService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,6 +143,7 @@
   <ItemGroup>
     <Folder Include="src\data\" />
     <Folder Include="src\features\admin\" />
+    <Folder Include="src\features\auth\" />
     <Folder Include="src\features\caissier\" />
     <Folder Include="src\features\medecin\" />
     <Folder Include="src\models\" />
