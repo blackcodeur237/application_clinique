@@ -25,7 +25,7 @@ namespace MyClinic_1._0
                 }
             }
 
-            Application.Run(new MainForm());
+            Application.Run(new SplashView());
         }
     }
 }
